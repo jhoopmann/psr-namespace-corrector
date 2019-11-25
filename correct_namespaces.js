@@ -3,13 +3,10 @@ const path = require('path');
 const process = require('process');
 
 if(process.argv.length < 3) {
-    throw 'invalid root path argument';
+    throw 'pass root path argument';
 }
 
 let root = path.normalize(process.argv[2]);
-if(root[root.length -1 ] === path.sep) {
-    root = root.slice(0, root.length -1);
-}
 
 /**
  *
