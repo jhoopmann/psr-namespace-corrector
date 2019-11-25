@@ -65,8 +65,8 @@ function _readDir(
                 ) {
                     _readDir(
                         root, 
-                        new RegExp(match.replace('namespace', 'use').replace(';','')+'\\','gm'),
-                        replace.replace('namespace', 'use').replace(';','')+'\\'
+                        new RegExp(match.replace('namespace', 'use').replace(';',''),'gm'),
+                        replace.replace('namespace', 'use').replace(';','')
                     );
                 }
             }   
